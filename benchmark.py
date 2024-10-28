@@ -9,7 +9,7 @@ def test_cpu_performance(benchmark):
 
     result = benchmark(fibonacci, 30)
     stats = benchmark.stats
-    assert stats['min'] > 0  # Ensure that the benchmark ran successfully
+    assert stats['min'] > 0  # Ensure that the benchmark ran successfully-
 
 def test_memory_performance(benchmark):
     def allocate_memory(size_mb):
